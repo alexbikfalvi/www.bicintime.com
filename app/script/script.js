@@ -462,17 +462,17 @@ function onRequestDirections(originAddr, destinationAddr, originLocation, destin
 				'<div class=".result-collapsible" data-role="collapsible" data-mini="true" data-collapsed="' + (index == 0 ? "false" : "true") + '" style="font-size:80%">' +
 				'<h3>' + formatDistance(value.distance.sum) + ' (' + value.print.sumTime + ')</h3>' +
 				'<table border="0" cellspacing="0" cellpadding="0">' +
-		        '<tr><td rowspan="1" valign="top"><img src="../../script/images/PinFlatFlagGreen_100.png" width="50" height="50" alt="Origin address" /></td>' + 
+		        '<tr><td rowspan="1" valign="top"><img src="images/PinFlatFlagGreen_100.png" width="50" height="50" alt="Origin address" /></td>' + 
 				'<td><b>Leave at</b><br/>' + originAddr + '</td></tr>' + 
-		        '<tr><td rowspan="1" valign="top"><img src="../../script/images/PinFlatBiciGreen_100.png" width="50" height="50" alt="Origin station" /></td>' + 
+		        '<tr><td rowspan="1" valign="top"><img src="images/PinFlatBiciGreen_100.png" width="50" height="50" alt="Origin station" /></td>' + 
 				'<td><b>Get bike at (+' + timeWalkOrigin + ' min)</b><br/>' + value.station.start.street + ' ' + value.station.start.street_number +
 				'<br/>Station: ' + value.station.start.station_id + '<br/>Bikes now: ' + value.station.start.bikes +
 				'<br/>Bikes estimated: ' + value.station.start.estimation.bikes + '</td></tr>' + 
-		        '<tr><td rowspan="1" valign="top"><img src="../../script/images/PinFlatBiciRed_100.png" width="50" height="50" alt="Destination station" /></td>' + 
+		        '<tr><td rowspan="1" valign="top"><img src="images/PinFlatBiciRed_100.png" width="50" height="50" alt="Destination station" /></td>' + 
 				'<td><b>Leave bike at (+' + timeBicing + ' min)</b><br/>' + value.station.arrive.street + ' ' + value.station.arrive.street_number +
 				'<br/>Station: ' + value.station.arrive.station_id + '<br/>Slots now: ' + value.station.arrive.slots +
 				'<br/>Slots estimated: ' + value.station.arrive.estimation.slots + '</td></tr>' + 
-		        '<tr><td rowspan="1" valign="top"><img src="../../script/images/PinFlatFlagRed_100.png" width="50" height="50" alt="Destination station" /></td>' + 
+		        '<tr><td rowspan="1" valign="top"><img src="images/PinFlatFlagRed_100.png" width="50" height="50" alt="Destination station" /></td>' + 
 				'<td><b>Arrive at (+' + timeWalkDestination + ' min)</b><br/>' + destinationAddr + '</td></tr>' + 
 				'</table></div></div>';
 		});
